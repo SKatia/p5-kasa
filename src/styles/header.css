@@ -1,7 +1,7 @@
 /****** Header ***********/
 header {
   display: block;
-  padding: 20px 50px;
+  margin: 20px 50px;
 }
 
 nav {
@@ -16,7 +16,6 @@ nav img {
 nav a {
   margin-right: 30px;
   padding-top: 20px;
-  font-family: "Montserrat", medium;
   font-size: 24px;
   text-decoration: none;
   color: black;

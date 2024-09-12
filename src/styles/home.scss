@@ -1,0 +1,107 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  // background: url('../assets/banner-home.png') no-repeat center center;
+  // background-size: cover;
+  // opacity: 1;
+  border-radius: 20px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  margin: 20px 50px; //
+
+    // Псевдоэлемент для картинки
+    &::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: url('../assets/banner-home.png') no-repeat center center;
+     background-size: cover;
+     z-index: 1;
+     border-radius: 20px; 
+   }
+
+  // Псевдоэлемент для затемнения
+  &::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5); 
+   z-index: 2;
+   border-radius: 20px; 
+ }
+
+h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    z-index: 3; // Текст выше всех слоев
+  }
+}
+.gallery {
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  margin: 20px 50px; //
+
+  .gallery-cards {
+  display: flex;
+}
+}
+
+.logements-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #F6F6F6; 
+  padding: 20px;
+  border-radius: 20px; 
+}
+
+.logement-card {
+  width: 25%; // Три карточки в ряд
+  // background-color: #FF6060;
+  border-radius: 15px; 
+  margin: 10px;
+  // padding: 15px;
+  text-align:left;
+  // position: relative;
+  // overflow: hidden;
+
+  // &:hover {
+  //   transform: scale(1.05);
+  // }
+
+  .logement-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    //top: 0;
+    //left: 0;
+    // position: absolute;
+    //z-index: 1; // Изображение ниже текста и градиента
+  }
+
+  h2 {
+    font-size: 18px;
+    text-decoration: double;
+    margin: 10px 0;
+    color: #FFFFFF;
+    bottom: 10px; // Отступ от нижней границы карточки
+    left: 10px; // Отступ от левой границы карточки
+    margin: 0;   
+    // position: absolute;
+    //z-index: 2; 
+}
+
+}

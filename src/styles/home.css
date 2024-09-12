@@ -1,0 +1,84 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 50px;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/banner-home.png") no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  border-radius: 20px;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  border-radius: 20px;
+}
+.banner h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.gallery {
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  margin: 20px 50px;
+}
+.gallery .gallery-cards {
+  display: flex;
+}
+
+.logements-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #F6F6F6;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.logement-card {
+  width: 25%;
+  border-radius: 15px;
+  margin: 10px;
+  text-align: left;
+}
+.logement-card .logement-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.logement-card h2 {
+  font-size: 18px;
+  -webkit-text-decoration: double;
+          text-decoration: double;
+  margin: 10px 0;
+  color: #FFFFFF;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+}/*# sourceMappingURL=home.css.map */

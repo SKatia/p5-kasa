@@ -1,0 +1,49 @@
+.banner2 {
+  position: relative;
+  height: 200px;
+  background: url("../assets/banner-apropos.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 20px 50px;
+}
+.banner2 h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.collaps {
+  margin: 38px 100px;
+}
+.collaps .collaps-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px 10px 20px;
+  background-color: #FF6060;
+  cursor: pointer;
+}
+.collaps .collaps-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+.collaps .collaps-header .arrow {
+  width: 6px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.collaps .collaps-header .arrow.down {
+  transform: rotate(45deg);
+}
+.collaps .collaps-header .arrow.up {
+  transform: rotate(-135deg);
+}
+.collaps .collaps-content {
+  padding: 20px 20px 20px 20px;
+  background-color: #F6F6F6;
+}/*# sourceMappingURL=apropos.css.map */
