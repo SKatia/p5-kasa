@@ -1,0 +1,27 @@
+@import '../styles/variables.scss';
+
+.page404 {
+    text-align: center;
+    color: $rouge;
+    margin: 139px;
+}
+.text404 {
+    font-size: 288px;
+    font-weight: bold;
+    // text-align:center ;
+}
+
+h1 {
+
+    font-size: 36px;
+    // font-weight: bold;
+    margin: 139px 0;
+    font-weight:500;
+}
+a {
+    font-size: 18px;
+    // font-weight: bold;
+    color: black;
+    // text-align:center ;
+    margin: 0 0 139px;
+}
