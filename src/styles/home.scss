@@ -1,3 +1,5 @@
+@import '../styles/variables.scss';
+
 .banner {
   position: relative;
   width: 100%;
@@ -46,36 +48,93 @@ h1 {
     z-index: 3; // Текст выше всех слоев
   }
 }
-.gallery {
-  background-color: #F6F6F6;
-  border-radius: 20px;
-  margin-top: 20px;
-  box-sizing: border-box;
-  margin: 20px 50px; //
 
-  .gallery-cards {
-  display: flex;
-}
-}
+// .gallery {
+  // .logements-grid { 
+  // background-color: $gris;
+  // border-radius: 20px;
+  // margin-top: 20px;
+  // box-sizing: border-box;
+  // margin: 20px 50px; //
 
-.logements-container {
+//   .gallery-cards {
+//   display: flex;
+// }
+// }
+
+// .logements-container {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-around;
+//   background-color: #F6F6F6; 
+//   padding: 20px;
+//   border-radius: 20px; 
+// }
+
+// .logement-card {
+//   width: 25%; // Три карточки в ряд
+//   // background-color: #FF6060;
+//   border-radius: 15px; 
+//   margin: 10px;
+//   // padding: 15px;
+//   text-align:left;
+//   // position: relative;
+//   // overflow: hidden;
+
+//   // &:hover {
+//   //   transform: scale(1.05);
+//   // }
+
+//   .logement-image {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     border-radius: 10px;
+//     //top: 0;
+//     //left: 0;
+//     // position: absolute;
+//     //z-index: 1; // Изображение ниже текста и градиента
+//   }
+
+//   h2 {
+//     font-size: 18px;
+//     text-decoration: double;
+//     margin: 10px 0;
+//     color: #FFFFFF;
+//     bottom: 10px; // Отступ от нижней границы карточки
+//     left: 10px; // Отступ от левой границы карточки
+//     margin: 0;   
+//     // position: absolute;
+//     //z-index: 2; 
+// }
+
+// }
+// .home {
+//   background-color: #e0e0e0; // Серый фон для всей галереи
+//   padding: 20px;
+// }
+
+.logements-grid {
+  background-color: $gris; 
   display: flex;
   flex-wrap: wrap;
+  gap: 25px; // Расстояние между карточками
   justify-content: space-around;
-  background-color: #F6F6F6; 
-  padding: 20px;
-  border-radius: 20px; 
+  padding: 40px;
+  border-radius: 25px; 
+}
+
+.logement-card-link {
+  text-decoration: none; // Убираем подчеркивание ссылки
 }
 
 .logement-card {
-  width: 25%; // Три карточки в ряд
-  // background-color: #FF6060;
-  border-radius: 15px; 
-  margin: 10px;
-  // padding: 15px;
-  text-align:left;
-  // position: relative;
-  // overflow: hidden;
+  width: 340px;  
+  height: 340px; 
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden; // Для обрезки картинки по границам карточки
+  // transition: transform 0.2s;
 
   // &:hover {
   //   transform: scale(1.05);
@@ -84,24 +143,21 @@ h1 {
   .logement-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    //top: 0;
-    //left: 0;
-    // position: absolute;
-    //z-index: 1; // Изображение ниже текста и градиента
+    object-fit: cover; // Изображение заполняет карточку, сохраняя пропорции
   }
 
-  h2 {
+  .logement-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // background: rgba(0, 0, 0, 0.5); // Полупрозрачный черный фон для текста
+    color: white; // Белый цвет текста
+    text-align: left;
+    padding: 15px;
     font-size: 18px;
-    text-decoration: double;
-    margin: 10px 0;
-    color: #FFFFFF;
-    bottom: 10px; // Отступ от нижней границы карточки
-    left: 10px; // Отступ от левой границы карточки
-    margin: 0;   
-    // position: absolute;
-    //z-index: 2; 
-}
-
+  }
+  h2 {
+    margin: 0;
+  }
 }

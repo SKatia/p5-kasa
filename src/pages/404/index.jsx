@@ -7,7 +7,6 @@ function Error() {
         <div className='page404'>
             <div className="text404">404</div>
             <h1>Oups! La page que vous demandez n'existe pas.</h1>
-            {/* <a href="">Retourner sur la page d’accueil</a> */}
             <Link to="/">Retourner à la page d'accueil</Link>
             </div>
     )

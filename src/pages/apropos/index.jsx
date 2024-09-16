@@ -1,6 +1,5 @@
 import '../../styles/apropos.css'
 import Collaps from '../../components/Collaps'
-// import Collaps from './Collaps';
 
 const APropos = () => {
   const collapsData = [

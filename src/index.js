@@ -25,7 +25,8 @@ import './index.css';
 // import './index.scss';
 import Home from './pages/home'
 import APropos from './pages/apropos'
-import CartLogement from './pages/cart-logement'
+import LogementDetails from './pages/LogementDetails';
+// import CartLogement from './pages/cart-logement'
 import Error from './pages/404'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -41,7 +42,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<APropos />} />
-        <Route path="/logement" element={<CartLogement />} />
+        <Route path="/logement/:id" element={<LogementDetails />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

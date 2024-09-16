@@ -1,0 +1,13 @@
+@import '../styles/variables.scss';
+
+.logement-details {
+    // max-width: 1200px; // Ограничиваем ширину страницы для лучшего восприятия
+    // margin: 0 auto; // Центрируем страницу
+    // background-color: #fff; // Белый фон для контента
+    // border-radius: 10px;
+    // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+h1 {
+    color: $rouge;
+}
+}
