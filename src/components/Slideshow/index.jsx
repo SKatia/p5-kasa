@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import '../../styles/slideshow.css'; // Файл стилей для карусели
+import '../../styles/slideshow.css'; 
 
 const Slideshow = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0); // Индекс текущего изображения
 
-  // Функция для перехода на следующее изображение
+  // 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
     );
   };
 
-  // Функция для перехода на предыдущее изображение
+  // 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? pictures.length - 1 : prevIndex - 1

@@ -12,3 +12,15 @@ footer {
         height: 39px;
     }
 }
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+footer {
+    p{
+        font-size: 12px;
+        width: 122px;
+        margin: 10px;
+    }
+}
+}

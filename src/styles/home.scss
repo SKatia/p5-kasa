@@ -2,7 +2,7 @@
 
 .banner {
   position: relative;
-  width: 100%;
+  // width: 100%;
   height: 200px;
   // background: url('../assets/banner-home.png') no-repeat center center;
   // background-size: cover;
@@ -48,71 +48,6 @@ h1 {
     z-index: 3; // Текст выше всех слоев
   }
 }
-
-// .gallery {
-  // .logements-grid { 
-  // background-color: $gris;
-  // border-radius: 20px;
-  // margin-top: 20px;
-  // box-sizing: border-box;
-  // margin: 20px 50px; //
-
-//   .gallery-cards {
-//   display: flex;
-// }
-// }
-
-// .logements-container {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-around;
-//   background-color: #F6F6F6; 
-//   padding: 20px;
-//   border-radius: 20px; 
-// }
-
-// .logement-card {
-//   width: 25%; // Три карточки в ряд
-//   // background-color: #FF6060;
-//   border-radius: 15px; 
-//   margin: 10px;
-//   // padding: 15px;
-//   text-align:left;
-//   // position: relative;
-//   // overflow: hidden;
-
-//   // &:hover {
-//   //   transform: scale(1.05);
-//   // }
-
-//   .logement-image {
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-//     border-radius: 10px;
-//     //top: 0;
-//     //left: 0;
-//     // position: absolute;
-//     //z-index: 1; // Изображение ниже текста и градиента
-//   }
-
-//   h2 {
-//     font-size: 18px;
-//     text-decoration: double;
-//     margin: 10px 0;
-//     color: #FFFFFF;
-//     bottom: 10px; // Отступ от нижней границы карточки
-//     left: 10px; // Отступ от левой границы карточки
-//     margin: 0;   
-//     // position: absolute;
-//     //z-index: 2; 
-// }
-
-// }
-// .home {
-//   background-color: #e0e0e0; // Серый фон для всей галереи
-//   padding: 20px;
-// }
 
 .logements-grid {
   background-color: $gris; 
@@ -160,4 +95,33 @@ h1 {
   h2 {
     margin: 0;
   }
+}
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+.banner{
+  margin: 20px; //
+  height: 111px;
+  h1 {
+    font-size: 24px;
+  }
+}
+  .logements-grid {
+    background-color: white; 
+    padding: 20px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 25px; // Расстояние между карточками
+    // justify-content: space-around;
+    // border-radius: 25px; 
+  }
+
+  .logement-card {
+    width: 100%;  
+    // height: 340px; 
+  }
+  
 }

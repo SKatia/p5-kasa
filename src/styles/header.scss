@@ -13,7 +13,7 @@ nav {
         height: 68px;
     }
     a {
-        margin-right: 30px;
+        margin-left: 30px;
         padding-top: 20px;
         // font-family: 'Montserrat', medium;
         font-size: 24px;
@@ -21,4 +21,22 @@ nav {
         color: black;
 
     }
+}
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+header {
+    margin: 20px;}
+
+nav {
+    img {
+        height: 47px;
+    }
+    a {
+        font-size: 12px;
+        text-transform: uppercase;
+
+    }
+}
 }

@@ -8,14 +8,33 @@
   margin: 139px 0;
   font-weight: 500;
 }
+.page404 a {
+  font-size: 18px;
+  color: black;
+  margin: 0 0 139px;
+}
 
 .text404 {
   font-size: 288px;
   font-weight: bold;
 }
 
-a {
-  font-size: 18px;
-  color: black;
-  margin: 0 0 139px;
+@media (max-width: 767.98px) {
+  .page404 {
+    margin: 113px;
+  }
+  .page404 h1 {
+    font-size: 18px;
+    margin: 113px 0;
+    font-weight: 500;
+  }
+  .page404 a {
+    font-size: 14px;
+    color: black;
+    margin: 0 0 113px;
+  }
+  .text404 {
+    font-size: 96px;
+    font-weight: bold;
+  }
 }/*# sourceMappingURL=erreur.css.map */

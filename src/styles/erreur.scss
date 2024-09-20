@@ -12,6 +12,13 @@
         font-weight:500;
     }
     
+    a {
+        font-size: 18px;
+        // font-weight: bold;
+        color: black;
+        // text-align:center ;
+        margin: 0 0 139px;
+    }
 }
 .text404 {
     font-size: 288px;
@@ -19,10 +26,28 @@
     // text-align:center ;
 }
 
-a {
-    font-size: 18px;
-    // font-weight: bold;
-    color: black;
-    // text-align:center ;
-    margin: 0 0 139px;
-}
+@media (max-width: 767.98px) {
+
+    .page404 {
+        margin: 113px;
+        h1 {
+            font-size: 18px;
+            // font-weight: bold;
+            margin: 113px 0;
+            font-weight:500;
+        }
+        
+        a {
+            font-size: 14px;
+            // font-weight: bold;
+            color: black;
+            // text-align:center ;
+            margin: 0 0 113px;
+        }
+    }
+    .text404 {
+        font-size: 96px;
+        font-weight: bold;
+        // text-align:center ;
+    }
+    }

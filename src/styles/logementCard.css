@@ -1,6 +1,105 @@
 .logement-details {
-  padding: 20px;
+  padding: 50px 20px;
 }
-.logement-details h1 {
+
+.logement-titre h1 {
   color: #FF6060;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.logement-titre p {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+}
+
+.logement-host {
+  display: flex;
+  width: 167px;
+  align-items: center;
+  margin: 10px 0;
+}
+.logement-host img {
+  border-radius: 50%;
+  height: 64px;
+  margin-left: 5px;
+}
+.logement-host h3 {
+  color: #FF6060;
+  font-weight: 400;
+}
+
+.logement-rating .star {
+  color: #FF6060;
+  margin-right: 5px;
+  font-size: 24px;
+  border: none;
+}
+
+.logement-tags {
+  display: flex;
+  gap: 30px;
+  margin: 10px 0;
+}
+
+.tags {
+  background-color: #FF6060;
+  color: white;
+  border-radius: 10%;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px;
+  width: 115px;
+  text-align: center;
+}
+
+.logement-collaps {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.logement-collaps .collaps {
+  margin: 0;
+  flex: 1 1 30%;
+  border-radius: 5%;
+}
+.logement-collaps .collaps .collaps-header {
+  border-radius: 10%;
+}
+.logement-collaps .collaps .collaps-header h2 {
+  font-size: 18px;
+}
+.logement-collaps .collaps .collaps-header .arrow {
+  border-width: 0 3px 3px 0;
+}
+.logement-collaps .collaps .collaps-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .logement-details {
+    padding: 27px 20px;
+  }
+  .card-title {
+    flex-direction: column;
+  }
+  .logement-titre h1 {
+    font-size: 18px;
+  }
+  .logement-titre p {
+    font-size: 14px;
+  }
+  .tags {
+    font-size: 10px;
+  }
+  .logement-host {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=logementCard.css.map */

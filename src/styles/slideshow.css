@@ -19,12 +19,11 @@
 .prev, .next {
   position: absolute;
   top: 50%;
-  background-color: none;
+  background-color: transparent;
   color: white;
   border: none;
-  padding: 10px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 48px;
   z-index: 1;
 }
 
@@ -44,4 +43,11 @@
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .slideshow {
+    height: 255px;
+  }
 }/*# sourceMappingURL=slideshow.css.map */
