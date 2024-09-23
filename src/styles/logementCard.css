@@ -51,7 +51,7 @@
 .tags {
   background-color: #FF6060;
   color: white;
-  border-radius: 10%;
+  border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
   padding: 3px;
@@ -69,7 +69,7 @@
   flex: 1 1 30%;
 }
 .logement-collaps .collaps .collaps-header {
-  border-radius: 10%;
+  border-radius: 10px;
 }
 .logement-collaps .collaps .collaps-header h2 {
   font-size: 18px;

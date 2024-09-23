@@ -6,11 +6,6 @@
   border-radius: 20px;
   margin: 20px 50px;
 }
-.banner2 h1 {
-  color: white;
-  font-size: 48px;
-  font-weight: bold;
-}
 
 .collaps {
   margin: 38px 100px;
@@ -44,6 +39,32 @@
   transform: rotate(-135deg);
 }
 .collaps .collaps-content {
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   background-color: #F6F6F6;
+  font-size: 18px;
+}
+.collaps .collaps-content p {
+  margin: 0px;
+}
+
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .banner2 {
+    margin: 20px;
+    height: 111px;
+  }
+  .collaps {
+    margin: 20px;
+  }
+  .collaps .collaps-header h2 {
+    font-size: 13px;
+  }
+  .collaps .collaps-header .arrow {
+    width: 3px;
+    height: 3px;
+  }
+  .collaps .collaps-content {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=apropos.css.map */
