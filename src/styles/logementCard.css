@@ -1,5 +1,5 @@
 .logement-details {
-  padding: 50px 20px;
+  margin: 50px 20px;
 }
 
 .logement-titre h1 {
@@ -41,6 +41,12 @@
   font-size: 24px;
   border: none;
 }
+.logement-rating .star-gris {
+  color: #E3E3E3;
+  margin-right: 5px;
+  font-size: 24px;
+  border: none;
+}
 
 .logement-tags {
   display: flex;
@@ -54,7 +60,7 @@
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
-  padding: 3px;
+  padding: 4px;
   width: 115px;
   text-align: center;
 }
@@ -84,21 +90,53 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   .logement-details {
-    padding: 27px 20px;
+    margin: 27px 20px;
   }
   .card-title {
     flex-direction: column;
   }
   .logement-titre h1 {
     font-size: 18px;
+    margin-bottom: 5px;
   }
   .logement-titre p {
     font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .logement-tags {
+    gap: 10px;
   }
   .tags {
     font-size: 10px;
   }
+  .host-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
   .logement-host {
+    margin-top: 0;
+  }
+  .logement-host h3 {
+    font-size: 12px;
+  }
+  .logement-host img {
+    height: 32px;
+  }
+  .logement-rating .star {
+    margin-right: 2px;
+    font-size: 13px;
+  }
+  .logement-rating .star-gris {
+    margin-right: 2px;
+    font-size: 13px;
+  }
+  .logement-collaps {
     flex-direction: column;
+    gap: 20px;
+  }
+  .logement-collaps .collaps .collaps-header h2 {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=logementCard.css.map */

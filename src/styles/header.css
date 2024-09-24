@@ -20,6 +20,9 @@ nav a {
   text-decoration: none;
   color: black;
 }
+nav a.active {
+  text-decoration: underline;
+}
 
 /****** Media queries ***********/
 /* Small devices (phones, less than 768px) */

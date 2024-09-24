@@ -21,6 +21,9 @@ nav {
         color: black;
 
     }
+    a.active {
+        text-decoration: underline;
+    }
 }
 /****** Media queries ***********/
 /* Small devices (phones, less than 768px) */

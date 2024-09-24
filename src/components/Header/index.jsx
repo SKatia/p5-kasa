@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import '../../styles/header.css' 
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
@@ -9,8 +9,8 @@ function Header() {
         <nav >
           <img className="logo" src={logo} alt="logo" />
           <div className="menu">
-            <Link to="/">Accueil</Link>
-            <Link to="/apropos">A propos</Link>
+            <NavLink to="/">Accueil</NavLink>
+            <NavLink to="/apropos">A propos</NavLink>
           </div>
         </nav>
       </header>

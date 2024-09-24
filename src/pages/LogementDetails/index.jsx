@@ -8,7 +8,7 @@ import Slideshow from '../../components/Slideshow';
 import Collaps from '../../components/Collaps';
 
 const LogementDetails = () => {
-  const { id } = useParams();  // Получаем ID объекта из URL
+  const { id } = useParams();  // get ID from URL
 
   // Найдем объект по его ID
   const logement = data.find(logement => logement.id === id);
@@ -31,7 +31,6 @@ const LogementDetails = () => {
   return (
     <div className="logement-details">
       <Slideshow pictures={logement.pictures} />
-      {/* <img src={logement.cover} alt={logement.title} /> */}
       <div className='card-title'>
         <div className='logement-titre'>
           <h1>{logement.title}</h1>
@@ -52,7 +51,13 @@ const LogementDetails = () => {
           <div className="logement-rating">
             {Array.from({ length: logement.rating }).map((_, index) => (
               <span key={index} className="star">
-                <FontAwesomeIcon key={index} icon={faStar} className="star" />
+                {/* <FontAwesomeIcon key={index} icon={faStar} className="star" /> */}
+                <FontAwesomeIcon icon={faStar} />
+              </span>
+            ))}
+            {Array.from({length: 5-  logement.rating }).map((_, index) => (
+              <span key={index} className="star-gris">
+                <FontAwesomeIcon icon={faStar} />
               </span>
             ))}
           </div>
