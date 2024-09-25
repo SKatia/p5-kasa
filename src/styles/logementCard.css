@@ -28,24 +28,23 @@
 .logement-host img {
   border-radius: 50%;
   height: 64px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .logement-host h3 {
   color: #FF6060;
   font-weight: 400;
 }
 
-.logement-rating .star {
-  color: #FF6060;
+.logement-rating span {
   margin-right: 5px;
   font-size: 24px;
   border: none;
 }
+.logement-rating .star {
+  color: #FF6060;
+}
 .logement-rating .star-gris {
   color: #E3E3E3;
-  margin-right: 5px;
-  font-size: 24px;
-  border: none;
 }
 
 .logement-tags {
@@ -124,12 +123,13 @@
   .logement-host img {
     height: 32px;
   }
-  .logement-rating .star {
+  .logement-rating span {
     margin-right: 2px;
+  }
+  .logement-rating .star {
     font-size: 13px;
   }
   .logement-rating .star-gris {
-    margin-right: 2px;
     font-size: 13px;
   }
   .logement-collaps {

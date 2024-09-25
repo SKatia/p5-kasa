@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.home {
+  margin: 50px;
+}
+
 .banner {
   position: relative;
   height: 200px;
@@ -7,7 +11,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 20px 50px;
+  margin: 20px 0;
+  margin-bottom: 43px;
 }
 .banner::before {
   content: "";
@@ -78,14 +83,18 @@
 }
 .logement-card h2 {
   margin: 0;
+  font-size: 18px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  .banner {
+  .home {
     margin: 20px;
+  }
+  .banner {
+    margin-bottom: 20px;
     height: 111px;
   }
   .banner h1 {
@@ -93,7 +102,7 @@
   }
   .logements-grid {
     background-color: white;
-    padding: 20px;
+    padding: 0;
   }
   .logement-card {
     width: 100%;

@@ -35,7 +35,7 @@
     img {
         border-radius: 50%;
         height: 64px;
-        margin-left: 5px;
+        margin-left: 10px;
     }
 
     h3 {
@@ -45,17 +45,16 @@
 }
 
 .logement-rating {
-    .star {
-        color: $rouge;
+    span {
         margin-right: 5px;
         font-size: 24px;
         border: none;
     }
+    .star {
+        color: $rouge;
+    }
     .star-gris {
         color: #E3E3E3;
-        margin-right: 5px;
-        font-size: 24px;
-        border: none;
     }
 }
 
@@ -169,12 +168,13 @@
     }
 
     .logement-rating {
-        .star {
+        span {
             margin-right: 2px;
+        }
+        .star {
             font-size: 13px;
         }
         .star-gris {
-            margin-right: 2px;
             font-size: 13px;
         }
         }
