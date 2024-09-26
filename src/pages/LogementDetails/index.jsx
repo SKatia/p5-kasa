@@ -10,7 +10,7 @@ import Collaps from '../../components/Collaps';
 const LogementDetails = () => {
   const { id } = useParams();  // get ID from URL
 
-  // Найдем объект по его ID
+  // objet par ID
   const logement = data.find(logement => logement.id === id);
 
   if (!logement) {

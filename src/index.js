@@ -8,7 +8,7 @@ import React from 'react'
 // import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './index.css';
-// import './index.scss';
+//import './index.scss';
 import Home from './pages/home'
 import APropos from './pages/apropos'
 import LogementDetails from './pages/LogementDetails';

@@ -20,20 +20,16 @@ const Slideshow = ({ pictures }) => {
 
   return (
     <div className="slideshow">
-      {/* Картинка текущего слайда */}
       <img src={pictures[currentIndex]} alt="Slideshow" className="slide" />
 
-      {/* Стрелка влево */}
       <button className="prev" onClick={prevSlide}>
         &#10094;
       </button>
 
-      {/* Стрелка вправо */}
       <button className="next" onClick={nextSlide}>
         &#10095;
       </button>
 
-      {/* Индикатор текущего слайда */}
       <div className="indicator">
         {currentIndex + 1} / {pictures.length}
       </div>
