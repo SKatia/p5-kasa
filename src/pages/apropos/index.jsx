@@ -35,12 +35,4 @@ const APropos = () => {
   );
 };
 
-// function APropos() {
-//     return (
-//       <div className='banner2'>
-//         <h1> A propos</h1>
-//       </div>
-//     )
-//   }
-  
 export default APropos
