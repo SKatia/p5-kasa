@@ -2,11 +2,10 @@
   text-align: center;
   color: #FF6060;
   margin: 139px;
-}
-.page404 h1 {
-  font-size: 36px;
-  margin: 139px 0;
-  font-weight: 500;
+  flex: 1 h1;
+  flex-font-size: 36px;
+  flex-margin: 139px 0;
+  flex-font-weight: 500;
 }
 .page404 a {
   font-size: 18px;

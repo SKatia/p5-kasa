@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+//import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+
 import '../../styles/apropos.css'
 
 const Collaps = ({ title, content }) => {
@@ -14,19 +16,17 @@ const Collaps = ({ title, content }) => {
         <h2>{title}</h2>
         <span className={`arrow ${isOpen ? 'up' : 'down'}`}></span>
       </div>
-      {isOpen && (
-        <div className="collaps-content">
-          {Array.isArray(content) ? (
-            <ul>
-              {content.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          ) : (
-            <p>{content}</p>
-          )}
-        </div>
-      )}
+      <div className={`collaps-content ${isOpen ? 'open' : 'closed'}`}>
+        {Array.isArray(content) ? (
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{content}</p>
+        )}
+      </div>
     </div>
   );
 };

@@ -22,7 +22,7 @@ const APropos = () => {
   ];
 
   return (
-    <div>
+    <div className='apropos'>
       <div className='banner2'>
         {/* <h1> A propos</h1> */}
       </div>

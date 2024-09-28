@@ -17,9 +17,8 @@
   
   .prev, .next {
     position: absolute;
-    top: 50%;
+    //top: 50%;
     // transform: translateY(-50%);
-    // background-color: rgba(0, 0, 0, 0); // Полупрозрачный черный фон стрелок
     background-color: transparent;
     color: white;
     border: none;
@@ -31,11 +30,11 @@
   }
   
   .prev {
-    left: 46px;
+    left: 23px;
   }
   
   .next {
-    right: 46px;
+    right: 23px;
   }
   
   .indicator {
@@ -43,7 +42,6 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    // background-color: rgba(0, 0, 0, 0.5); // Полупрозрачный черный фон индикатора
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -54,5 +52,19 @@
 
   .slideshow {
     height: 255px; 
-}
+  }
+
+  .prev, .next {
+    font-size: 24px;
+  }
+    
+  .prev {
+    left: 12px;
+  }
+
+  .next {
+    right: 12px;
+  }
+
+
 }

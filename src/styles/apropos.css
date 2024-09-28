@@ -1,3 +1,8 @@
+@charset "UTF-8";
+.apropos {
+  flex: 1;
+}
+
 .banner2 {
   position: relative;
   height: 200px;
@@ -39,15 +44,28 @@
   transform: rotate(-135deg);
 }
 .collaps .collaps-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
   padding: 20px;
   background-color: #F6F6F6;
   font-size: 18px;
+  transform-origin: top; /* Точка начала трансформации */
+  transform: scaleY(0); /* Скала по Y 0 - скрыт */
+  transition: transform 0.3s ease; /* Переход для плавного раскрытия */
+  overflow: hidden; /* Скрываем переполнение */
 }
 .collaps .collaps-content p {
   margin: 0px;
 }
 
-/****** Media queries ***********/
+.collaps-content.open {
+  transform: scaleY(1); /* Открываем контент при scaleY 1 */
+}
+
+.collaps-content.closed {
+  transform: scaleY(0); /* Закрываем контент при scaleY 0 */
+} /****** Media queries ***********/
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   .banner2 {

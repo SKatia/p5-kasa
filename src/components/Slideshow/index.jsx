@@ -22,6 +22,9 @@ const Slideshow = ({ pictures }) => {
     <div className="slideshow">
       <img src={pictures[currentIndex]} alt="Slideshow" className="slide" />
 
+      {pictures.length > 1 && (
+        <>
+
       <button className="prev" onClick={prevSlide}>
         &#10094;
       </button>
@@ -33,6 +36,9 @@ const Slideshow = ({ pictures }) => {
       <div className="indicator">
         {currentIndex + 1} / {pictures.length}
       </div>
+      </>
+
+      )}
     </div>
   );
 };
