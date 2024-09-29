@@ -13,7 +13,7 @@ const APropos = () => {
     },
     {
       title: "Service",
-      content: "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+      content: "La qualité de service est au coeur de notre engagement chez Kasa. Nous veillons à ce que chaque interaction soit empreinte de respect."
     },
     {
       title: "Sécurité",

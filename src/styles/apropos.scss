@@ -41,6 +41,7 @@
       border-width: 0 4px 4px 0;
       display: inline-block;
       padding: 3px;
+      transition: transform 0.3s ease; /* Переход для стрелки */
 
       &.down {
         transform: rotate(45deg);
@@ -56,26 +57,24 @@
     overflow: hidden; 
     max-height: 0; 
     transition: max-height 0.5s ease; 
-    padding: 20px;
+    //padding: 20px;
     background-color: $gris;
     font-size: 18px;
     p {
       margin: 0px;
     }
-    transform-origin: top; /* Точка начала трансформации */
-    transform: scaleY(0); /* Скала по Y 0 - скрыт */
-    transition: transform 0.3s ease; /* Переход для плавного раскрытия */
-    overflow: hidden; /* Скрываем переполнение */
     }
 }
 
 .collaps-content.open {
-transform: scaleY(1); /* Открываем контент при scaleY 1 */
+  max-height: 500px; /* assez grande */
 }
 
 .collaps-content.closed {
-transform: scaleY(0); /* Закрываем контент при scaleY 0 */
-}/****** Media queries ***********/
+  max-height: 0; 
+}
+
+/****** Media queries ***********/
 /* Small devices (phones, less than 768px) */
 
 @media (max-width: 767.98px) {

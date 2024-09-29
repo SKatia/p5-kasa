@@ -9,16 +9,16 @@ footer p {
   font-size: 24px;
   color: white;
 }
-footer img {
-  height: 39px;
-}
-
-/****** Media queries ***********/
-/* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   footer p {
     font-size: 12px;
     width: 122px;
     margin: 10px;
   }
-}/*# sourceMappingURL=footer.css.map */
+}
+footer p img {
+  height: 39px;
+}
+
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) *//*# sourceMappingURL=footer.css.map */
